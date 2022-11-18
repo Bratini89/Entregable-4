@@ -29,7 +29,7 @@ function App() {
 
   }
 
-  console.log(usersList)
+ // console.log(usersList)
 
   const deselectUsers = () => setUsersSelected(null)
 

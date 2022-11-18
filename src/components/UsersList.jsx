@@ -4,9 +4,6 @@ import Swal from 'sweetalert2';
 const UsersList = ({ usersList, selectUsers, deleteUser}) => {
 
 
-
-console.log(usersList)
-
     return (
         <ul>
             {

@@ -21,9 +21,10 @@ const UsersForm = ({ getUsers, usersSelected, deselectUsers }) => {
             reset(usersSelected)
         } else {
             reset(initialUsers)
-        }
+        } 
+        
 
-    }, [])
+    }, [usersSelected])
 
    
     const submit = (data) => {
@@ -52,11 +53,8 @@ const UsersForm = ({ getUsers, usersSelected, deselectUsers }) => {
                 .then(() => getUsers())
                 .catch(error => console.log(error.response?.data))
         }
-      
-        
-       
-
     }
+
 
     return (
         <form

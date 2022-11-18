@@ -8,6 +8,11 @@ html {
 
   background-image: url("https://fondosmil.com/fondo/47687.jpg");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin: auto;
 
 }
 
@@ -115,3 +120,27 @@ a {
 button {
   background-color: #d3c0c0;
 }
+
+@media only screen and (max-width: 600px) {
+
+.users-form {
+  width: fit-content;
+  display: inline-grid;
+  place-content: space-around;
+  margin: auto;
+}
+
+li {
+  width:fit-content ;
+}
+
+lu {
+  width: fit-content;
+}
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
