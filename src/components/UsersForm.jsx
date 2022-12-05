@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
 import { useForm, } from 'react-hook-form';
-import Swal from "sweetalert2"
+
 
 
 const initialUsers = {
@@ -9,7 +9,7 @@ const initialUsers = {
     last_name: "",
     password: "",
     email: "",
-    birthday: ""
+    birthday: "" 
 }
 
 const UsersForm = ({ getUsers, usersSelected, deselectUsers }) => {
