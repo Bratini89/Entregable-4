@@ -19,9 +19,10 @@ html {
 
 
 .App {
-  display: flex;
+  display: grid;
   margin: 0 auto;
   padding: 1rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .input-container {
@@ -52,7 +53,7 @@ input {
   height: 350px;
   background-image: url("https://t4.ftcdn.net/jpg/00/81/32/45/360_F_81324535_JCfbuvzOsk90FIiBmEZfp64ovkII4nxE.jpg");
   background-size: cover;
-  
+
 
 }
 
@@ -121,26 +122,37 @@ button {
   background-color: #d3c0c0;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 
-.users-form {
-  width: fit-content;
-  display: inline-grid;
-  place-content: space-around;
-  margin: auto;
+  .users-form {
+    width: fit-content;
+    display: inline-grid;
+    place-content: space-around;
+    margin: auto;
+  }
+
+  .App {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  li {
+    width: fit-content;
+  }
+
+  lu {
+    width: fit-content;
+  }
 }
 
-li {
-  width:fit-content ;
+@media (max-width: 890px) {
+  .App {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }
 
-lu {
-  width: fit-content;
-}
-}
-
-*{
+* {
   box-sizing: border-box;
 }
-
-
