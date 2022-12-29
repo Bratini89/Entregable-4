@@ -29,14 +29,14 @@ function App() {
 
   }
 
- // console.log(usersList)
+  //console.log(usersList)
 
   const deselectUsers = () => setUsersSelected(null)
 
   const deleteUser = (id) => {
     axios
     .delete(`https://users-crud.academlo.tech/users/${id}/`)
-    .then(res => getUsers(res.data))
+    .then(res =>getUsers(res.data))
   } 
 
   
