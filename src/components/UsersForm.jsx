@@ -41,7 +41,7 @@ const UsersForm = ({ getUsers, usersSelected, deselectUsers }) => {
            )
 
         if (usersSelected) {
-            axios.put(`https://users-crud1.herokuapp.com/users/${usersSelected.id}/`, data)
+            axios.put(`https://users-crud.academlo.tech/users/${usersSelected.id}/`, data)
                 .then(() => {
                     getUsers()
                     deselectUsers()
@@ -49,7 +49,7 @@ const UsersForm = ({ getUsers, usersSelected, deselectUsers }) => {
                 })
                 .catch(error => console.log(error.response?.data))
         } else {
-            axios.post(`https://users-crud1.herokuapp.com/users/`, data)
+            axios.post(`https://users-crud.academlo.tech/users/`, data)
                 .then(() => getUsers())
                 .catch(error => console.log(error.response?.data))
         }
