@@ -145,7 +145,7 @@ button {
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 896px) {
   .App {
     display: flex;
     flex-direction: column-reverse;
@@ -153,6 +153,16 @@ button {
 
 }
 
-* {
-  box-sizing: border-box;
+@media (max-width: 350px) {
+.App {
+    display: flex;
+    flex-direction: column-reverse;
 }
+}
+
+@media (max-width: 400px) {
+  .App {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  }
