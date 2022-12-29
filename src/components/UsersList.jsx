@@ -30,3 +30,8 @@ const UsersList = ({ usersList, selectUsers, deleteUser}) => {
                     </li>
                 ))
             }
+        </ul>
+    );
+};
+
+export default UsersList;
