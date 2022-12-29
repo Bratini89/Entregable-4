@@ -3,8 +3,7 @@ import React, { useEffect } from 'react';
 import { useForm, } from 'react-hook-form';
 
 import Swal from "sweetalert2"
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+
 
 
 
