@@ -101,7 +101,9 @@ ul {
 }
 
 .btn-icon {
-  margin-left: 30rem;
+  margin-left: 20rem;
+  display: flex;
+  flex-direction: row;
 }
 
 i {
@@ -154,15 +156,15 @@ button {
 }
 
 @media (max-width: 350px) {
-.App {
+  .App {
     display: flex;
     flex-direction: column-reverse;
-}
+  }
 }
 
 @media (max-width: 400px) {
   .App {
-      display: flex;
-      flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
   }
-  }
+}
