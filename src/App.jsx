@@ -36,7 +36,7 @@ function App() {
   const deleteUser = (id) => {
     axios
     .delete(`https://users-crud.academlo.tech/users/${id}/`)
-    .then(res => setUsersList(res.data))
+    .then(res => getUsers(res.data))
   } 
 
   
