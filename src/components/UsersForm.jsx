@@ -2,6 +2,11 @@ import axios from 'axios';
 import React, { useEffect } from 'react';
 import { useForm, } from 'react-hook-form';
 
+import Swal from "sweetalert2"
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+
+
 
 
 const initialUsers = {
@@ -57,6 +62,7 @@ const UsersForm = ({ getUsers, usersSelected, deselectUsers }) => {
 
 
     return (
+ 
         <form
             className='users-form'
             onSubmit={handleSubmit(submit)}
@@ -82,9 +88,11 @@ const UsersForm = ({ getUsers, usersSelected, deselectUsers }) => {
                 <label htmlFor="birthday"><i class="fa-solid fa-cake-candles"></i> </label>{" "}
                 <input {...register("birthday")} type="date" id="birthday" required />
             </div>
-            <button>Go{" "}<i className="fa-solid fa-right-to-bracket"></i></button>
+            <button>Submit{" "}<i className="fa-solid fa-right-to-bracket"></i></button>
         </form>
+        
     );
 };
 
 export default UsersForm;
+
