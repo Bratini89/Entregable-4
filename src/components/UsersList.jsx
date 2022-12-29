@@ -1,5 +1,5 @@
 import React from 'react';
-import Swal from 'sweetalert2';
+
 
 const UsersList = ({ usersList, selectUsers, deleteUser}) => {
 
@@ -7,7 +7,7 @@ const UsersList = ({ usersList, selectUsers, deleteUser}) => {
     return (
         <ul>
             {
-                usersList.map(users => (
+                usersList.map((users) => (
                     <li key={users.id}>
                         <div> <h2>{users.first_name}{" "}{users.last_name}</h2></div>
                         <div>
