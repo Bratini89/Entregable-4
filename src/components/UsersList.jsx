@@ -17,18 +17,16 @@ const UsersList = ({ usersList, selectUsers, deleteUser}) => {
                             <h4>Birthday </h4>
                             <p><i className="fa-solid fa-cake-candles"></i>{" "}{users.birthday}</p></div> {"  "}
                         <div className='btn-icon'>
+
                             <a href="#" onClick={() => selectUsers(users)} >
+                                Edit{" "}
                             <i className="fa-regular fa-pen-to-square" ></i>
                             </a>
                             <a href="#" onClick={() => deleteUser(users.id)}>
+                                Delete {" "}
                              <i className="fa-sharp fa-solid fa-trash" ></i>
                              </a>
                         </div>
                     </li>
                 ))
             }
-        </ul>
-    );
-};
-
-export default UsersList;
